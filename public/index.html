@@ -1,26 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="ru">
+<head>
     <meta charset="UTF-8">
-    <title>Test yandex turbo app</title>
+    <title>Перекресток.ру</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="icon.png" type="image/png">
     <link rel="manifest" href="yandex-manifest.json">
-  </head>
-  <body style="user-select: none">
-	<h1 style="color: #4d4d4d; text-align: center">Turbo app</h1>
-    <div style="text-align: center">
-        <img class="icon" src="/icon.png" style="width:100%; height: 100%; max-width: 320px; max-height:320px">
-    </div>
-  </body>
-  <script>
-      window.rotate = 0;
-      window.icon = document.querySelector(".icon")
-      icon.addEventListener("click", function () {
-          window.rotate += 90;
-          window.rotate = window.rotate % 360;
-          icon.style.transform = "rotate(" + String(window.rotate) + "deg)";
-      });
-  </script>
+</head>
+<style>
+    body {
+        font-family: sans-serif;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    ul li {
+        display: block;
+        list-style: none;
+        line-height: 5em;
+        text-align: center;
+        font-size: 24px;
+    }
+    a:visited, a:hover {
+        color: #0b5c20;
+    }
+    a {
+        color: #2d8e45;
+        text-decoration: none;
+    }
+</style>
+<body style="user-select: none">
+<div style="padding: 20px">
+    <img src="/logo.png" style="max-width: 200px">
+</div>
+
+<div style="margin: 10px 4px;">
+    <a href="/">
+        <img src="/banner.png" style="max-width: 100%; border-radius: 16px">
+    </a>
+</div>
+
+<div style="margin: 20px 4px;">
+    <ul>
+        <li><a href="/masks">Маски и антисептики</a></li>
+        <li><a href="/">Напитки</a></li>
+        <li><a href="/">Мороженное</a></li>
+        <li><a href="/">Упаковкой дешевле</a></li>
+        <li><a href="/">Линзы</a></li>
+        <li><a href="/">Молоко</a></li>
+        <li><a href="/">Хлеб</a></li>
+        <li><a href="/">Гречка</a></li>
+        <li><a href="/">Мука</a></li>
+        <li><a href="/">Сыр</a></li>
+        <li><a href="/">Картофель</a></li>
+    </ul>
+</div>
+</body>
 </html>
