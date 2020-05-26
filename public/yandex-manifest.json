@@ -2,11 +2,11 @@
   "name": "Тестовое приложение",
   "lang": "ru",
   "icons": [
-    {
+      {
        "src": "icon.png",
        "sizes": "576x576",
        "type": "image/png"
-    }
+      }
   ],
   "start_url": "https://turbo.slimov.ru/index.html",
   "yandex": {
@@ -20,5 +20,6 @@
       "resources": [
           "icon.png"
       ]
+    }
   }
 }
