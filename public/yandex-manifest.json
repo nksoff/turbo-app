@@ -1,0 +1,16 @@
+{
+  "icons": [{
+    "src": "icon.png",
+    "sizes": "576x576",
+    "type": "image/png"
+  }],
+  "yandex": {
+    "splash_screen_color": "#4d4d4d",
+    "cache": {
+      "resources": [
+        "icon.png",
+        "index.html"
+      ]
+    }
+  }
+}

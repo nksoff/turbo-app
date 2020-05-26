@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Test yandex turbo app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="icon.png" type="image/png">
+    <link rel="manifest" href="yandex-manifest.json">
+  </head>
+  <body style="user-select: none">
+	<h1 style="color: #4d4d4d; text-align: center">Turbo app</h1>
+    <div style="text-align: center">
+        <img class="icon" src="/icon.png" style="width:100%; height: 100%; max-width: 320px; max-height:320px">
+    </div>
+  </body>
+  <script>
+      window.rotate = 0;
+      window.icon = document.querySelector(".icon")
+      icon.addEventListener("click", function () {
+          window.rotate += 90;
+          window.rotate = window.rotate % 360;
+          icon.style.transform = "rotate(" + String(window.rotate) + "deg)";
+      });
+  </script>
+</html>
