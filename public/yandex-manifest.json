@@ -1,16 +1,24 @@
 {
-  "icons": [{
-    "src": "icon.png",
-    "sizes": "576x576",
-    "type": "image/png"
-  }],
+  "name": "Тестовое приложение",
+  "lang": "ru",
+  "icons": [
+    {
+       "src": "icon.png",
+       "sizes": "576x576",
+       "type": "image/png"
+    }
+  ],
+  "start_url": "https://turbo.slimov.ru/index.html",
   "yandex": {
+    "manifest_version": 1,
+    "app_id": "",
+    "app_version": "0.0.1",
+    "client_id": "",
+    "base_url": "https://turbo.slimov.ru/",
     "splash_screen_color": "#4d4d4d",
     "cache": {
       "resources": [
-        "icon.png",
-        "index.html"
+          "icon.png"
       ]
-    }
   }
 }
